@@ -1,0 +1,28 @@
+
+
+
+<h1>
+<%= @friend.first_name %> <%= @friend.last_name %>
+</h1>
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+      <%= @friend.email %> </span>
+    </div>
+    <div class="col-sm">
+      <%= @friend.phone %>
+    </div>
+    <div class="col-sm">
+      <%= @friend.twitter %>
+    </div>
+  </div>
+</div>
+
+
+
+
+<br>
+
+<%= link_to 'Edit', edit_friend_path(@friend),class:"btn btn-secondary" %> 
+<%= link_to 'Back', friends_path,class:"btn btn-secondary"%>
